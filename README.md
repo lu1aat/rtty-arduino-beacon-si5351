@@ -21,7 +21,7 @@ Si es lo primero que haces con Arduino, antes tenes que leer un tutorial de Ardu
     * Arduino A4    -   Si5351 SDA
     * Arduino A5   -    Si5351 SCL
 
-<img src="https://github.com/lu1aat/rtty-arduino-beacon-si5351/raw/master/rtty-arduino-beacon-si5351-sketch_bb.svg">
+<img src="./rtty-arduino-beacon-si5351-sketch_bb.svg">
 
 **Usar un filtro** acorde a la frecuencia donde se desea transmitir. Para hacer pruebas sin soldar el conector SMA se puede usar la salida _0_ del Si5351 y un cable como antena.
 
