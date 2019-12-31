@@ -45,7 +45,7 @@ void toneSwitch(bool mark) {
 //
 // ASCII + custom to Baudot symbols
 //
-// 0-9 group is ASCII 48-57 located fom 25 to 35
+// 0-9 group is ASCII 48-57 located fom 26 to 35
 // A-Z group is ASCII 65-90 located from 0 to 25
 int symbolTable[][5] = {
   {1, 1, 0, 0, 0},           // 0  A
@@ -117,12 +117,14 @@ void rttyMode(bool letters) {
   }
 }
 
+// Send start bit (a single SPACE)
 void rttyStartBit() {
   // Start bit
   toneSwitch(SPACE);
   delay(toneDurationMs);
 }
 
+// Send a stop bit (a MARK with 1.5x tone duration)
 void rttyStopBit() {
   // Stop bit
   toneSwitch(MARK);
@@ -218,6 +220,7 @@ void setup() {
   si5351.drive_strength(SI5351_CLK0, SI5351_DRIVE_2MA);
   si5351.set_freq(FREQ + markFreqHz, SI5351_CLK0);
   si5351.output_enable(SI5351_CLK0, 0);
+  
   #ifdef DEBUG
   Serial.println("Si5351 OK");
   #endif
