@@ -2,6 +2,8 @@
 
 Implementacion de una baliza RTTY en Arduino usando el modulo Si5351 que opera desde 8Khz a 144MHz. Permite poner un texto que va a ser modulado en RTTY (default 45.5 Baudios) por la salida *0* del modulo Si5351. Se deberia utilizar un filtro dependiendo la frecuencia en la que utilizarse. Para probar con un cable estamos bien.
 
+[![Decodificando con Yaesu FT-857 y fldigi](https://img.youtube.com/vi/5N3AuJ1Rmb8/0.jpg)](https://www.youtube.com/watch?v=5N3AuJ1Rmb8)
+
 Es un proyecto simple y basico para experimentar con Arduino en el ambito de la radioaficion. Es una adaptacion de otros proyectos mas simples:
 
 - [cw-arduino-beacon](https://github.com/lu1aat/cw-arduino-beacon/)
