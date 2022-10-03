@@ -1,6 +1,6 @@
-# rtty-arduino-beacon-audio
+# rtty-arduino-si5351
 
-Implementacion de una baliza RTTY en Arduino usando el modulo Si5351 que opera desde 8Khz a 144MHz. Permite poner un texto que va a ser modulado en RTTY (default 45.5 Baudios) por la salida *0* del modulo Si5351. Se deberia utilizar un filtro dependiendo la frecuencia en la que utilizarse. Para probar con un cable estamos bien.
+Implementacion de una baliza RTTY en Arduino usando el modulo Si5351 que opera desde 8Khz a 144MHz. Permite poner un texto que va a ser modulado en RTTY (default 45.5 Baudios) por la salida *0* del modulo Si5351. Se deberia utilizar un filtro dependiendo la frecuencia en la que utilizarse. Para probar, con un cable estamos bien.
 
 [![Decodificando con Yaesu FT-857 y fldigi](https://img.youtube.com/vi/5N3AuJ1Rmb8/0.jpg)](https://www.youtube.com/watch?v=5N3AuJ1Rmb8)
 
@@ -65,17 +65,6 @@ El tiempo de espera en segundos, entre trasmision y transmision, puede ser cambi
 ```c++
 const int SLEEP_SEC = 60;
 ```
-
-### PIN de transmision
-
-El PIN de salida de audio esta defindo en:
-
-```c++
-const int LED_PIN = LED_BUILTIN;
-```
-
-En el Arduino UNO la constante `LED_BUILTIN` corresponde al PIN 13 que esta conectado al LED integrado del la placa.
-
 
 ## Ayuda
 
